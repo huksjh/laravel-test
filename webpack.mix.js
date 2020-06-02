@@ -5,7 +5,7 @@ const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
 
 var webpackConfig = {
     plugins: [
-        new CaseSensitivePathsPlugin(),
+        new VuetifyLoaderPlugin(),
         new CaseSensitivePathsPlugin()
         // other plugins ...
     ]
