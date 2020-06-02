@@ -17,7 +17,7 @@ class MainController extends Controller
     {
 
         //$getData = json_decode($getData, true);
-        return view('welcome');
+        return view('spa');
 
     }
 
