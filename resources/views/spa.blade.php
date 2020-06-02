@@ -26,7 +26,7 @@
 <body>
     <div id="app">
         {{-- vue 파일  --}}
-        <navbar></navbar>       
+        <example-component></example-component>       
     </div>
 </body>
 </html>
