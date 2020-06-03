@@ -1,6 +1,5 @@
 <template>
 	<v-app id="inspire">
-		1111
 		<v-navigation-drawer v-model="drawer" app>
 			<v-list dense>
 				<v-list-item link>

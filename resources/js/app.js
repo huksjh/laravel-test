@@ -6,6 +6,8 @@
 
 require("./bootstrap");
 
+import "@babel/polyfill";
+
 window.Vue = require("vue");
 
 import Vuetify from "../plugins/vuetify";

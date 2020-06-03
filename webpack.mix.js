@@ -11,11 +11,18 @@ var webpackConfig = {
     ]
     // other webpack config ...
 };
-
 mix.webpackConfig(webpackConfig);
 
 require("laravel-mix-polyfill");
 
+const TargetsPlugin = require("targets-webpack-plugin");
+mix.webpackConfig({
+    plugins: [
+        new TargetsPlugin({
+            browsers: ["last 2 versions", "chrome >= 41", "IE 11"]
+        })
+    ]
+});
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
