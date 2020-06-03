@@ -14,6 +14,8 @@ var webpackConfig = {
 
 mix.webpackConfig(webpackConfig);
 
+require("laravel-mix-polyfill");
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -25,7 +27,8 @@ mix.webpackConfig(webpackConfig);
  |
  */
 
-mix.js("resources/js/app.js", "public/js").sass(
-    "resources/sass/app.scss",
-    "public/css"
-);
+mix.js("resources/js/app.js", "public/js")
+    .sass("resources/sass/app.scss", "public/css")
+    .polyfill({
+        useBuiltIns: "entry"
+    });
