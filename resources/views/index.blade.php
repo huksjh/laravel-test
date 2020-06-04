@@ -19,17 +19,14 @@
 
     
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('dist/css/app.css') }}" rel="stylesheet">
 
 </head>
 <body>
-    <div id="app">
-        {{-- vue 파일  --}}
-        <app-container></app-container>       
-    </div>
+    <div id="app"></div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('dist/js/app.js') }}" defer></script>
     
 </body>
 </html>

@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 //모든 url path를   resources/view/spa.blade.php로 되게 
 Route::get('{path}', function(){
-    return view('spa');
+    return view('index');
 })->where('path', '.*');
 
 
