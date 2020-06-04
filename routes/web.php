@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', 'MainController@index')->name('spa');
+Route::get('/', 'HomeController@index')->name('spa');
 
 //Route::get('/', 'MainController@index')->name('welcome');
 /*

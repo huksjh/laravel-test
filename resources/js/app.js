@@ -6,8 +6,6 @@
 
 require("./bootstrap");
 
-import "@babel/polyfill";
-
 window.Vue = require("vue");
 
 import Vuetify from "../plugins/vuetify";
@@ -22,6 +20,11 @@ import Vuetify from "../plugins/vuetify";
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+
+Vue.component(
+    "app-container",
+    require("./components/AppContainer.vue").default
+);
 
 Vue.component(
     "example-component",
