@@ -109,7 +109,12 @@
 			drawer: null
 		}),
 		methods: {
-			logout() {}
+			logout() {
+				console.log("logout");
+				axios.post("/logout").then(response => {
+					window.location.href = "/";
+				});
+			}
 		}
 	};
 </script>

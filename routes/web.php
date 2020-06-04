@@ -13,13 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', 'HomeController@index')->name('spa');
+
+//모든 url path를   resources/view/spa.blade.php로 되게 
+Route::get('{path}', function(){
+    return view('spa');
+})->where('path', '.*');
+
+
+/* Route::get('/', 'HomeController@index')->name('home');
 
 //Route::get('/', 'MainController@index')->name('welcome');
 /*
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home'); */
+Route::get('/home', 'HomeController@index')->name('home'); * /
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home'); */
