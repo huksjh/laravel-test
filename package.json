@@ -30,7 +30,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "axios": "^0.19",
+        "axios": "^0.21",
         "@babel/polyfill": "^7.10.1",
         "core-js": "^3.6.5",
         "vue-router": "^3.0.6",
